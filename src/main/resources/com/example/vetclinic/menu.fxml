@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="menuRoot" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.vetclinic.MenuController">
+    <Label fx:id="menu" layoutX="244.0" layoutY="44.0" text="Меню" textAlignment="RIGHT" textFill="#7e0cff" wrapText="true" AnchorPane.bottomAnchor="320.4" AnchorPane.leftAnchor="382.2" AnchorPane.rightAnchor="382.20000000000005" AnchorPane.topAnchor="30.0">
+        <font>
+            <Font name="Ink Free" size="36.0" />
+        </font>
+    </Label>
+    <Button layoutX="180.0" layoutY="149.0" mnemonicParsing="false" onAction="#viewPatients" prefHeight="50.0" prefWidth="125.0" style="-fx-background-color: #7e0cff; -fx-background-radius: 30;" text="Пациенты" textFill="WHITE" AnchorPane.bottomAnchor="200.0" AnchorPane.leftAnchor="180.0">
+        <font>
+            <Font name="System Bold" size="18.0" />
+        </font>
+        <effect>
+            <DropShadow height="50.0" radius="24.5" width="50.0">
+                <color>
+                    <Color red="0.3684210479259491" blue="0.7894737124443054" opacity="0.8199999928474426" />
+                </color>
+            </DropShadow>
+        </effect>
+    </Button>
+
+    <Button layoutX="180.0" layoutY="282.0" mnemonicParsing="false" onAction="#viewVeterinarians" prefHeight="50.0" prefWidth="125.0" style="-fx-background-color: #7e0cff; -fx-background-radius: 30;" text="Врачи" textFill="WHITE" AnchorPane.bottomAnchor="75.0" AnchorPane.leftAnchor="180.0">
+        <font>
+            <Font name="System Bold" size="18.0" />
+        </font>
+        <effect>
+            <DropShadow height="50.0" radius="24.5" width="50.0">
+                <color>
+                    <Color red="0.3684210479259491" blue="0.7894737124443054" opacity="0.8199999928474426" />
+                </color>
+            </DropShadow>
+        </effect>
+      <opaqueInsets>
+         <Insets />
+      </opaqueInsets>
+    </Button>
+    <Button layoutX="544.0" layoutY="149.0" mnemonicParsing="false" onAction="#viewServices" prefHeight="50.0" prefWidth="125.0" style="-fx-background-color: #7e0cff; -fx-background-radius: 30;" text="Услуги" textFill="WHITE" AnchorPane.bottomAnchor="200.0" AnchorPane.rightAnchor="180.0">
+        <font>
+            <Font name="System Bold" size="18.0" />
+        </font>
+        <effect>
+            <DropShadow height="50.0" radius="24.5" width="50.0">
+                <color>
+                    <Color red="0.3684210479259491" blue="0.7894737124443054" opacity="0.8199999928474426" />
+                </color>
+            </DropShadow>
+        </effect>
+    </Button>
+    <Button layoutX="544.0" layoutY="282.0" mnemonicParsing="false" onAction="#viewAppointments" prefHeight="50.0" prefWidth="125.0" style="-fx-background-color: #7e0cff; -fx-background-radius: 30;" text="Записи" textFill="WHITE" AnchorPane.bottomAnchor="75.0" AnchorPane.rightAnchor="180">
+        <font>
+            <Font name="System Bold" size="18.0" />
+        </font>
+        <effect>
+            <DropShadow height="50.0" radius="24.5" width="50.0">
+                <color>
+                    <Color red="0.3684210479259491" blue="0.7894737124443054" opacity="0.8199999928474426" />
+                </color>
+            </DropShadow>
+        </effect>
+    </Button>
+</AnchorPane>

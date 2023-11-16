@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="InsAppRoot" prefHeight="400.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.vetclinic.AppointmentsInserterController">
+    <Label fx:id="Title" layoutX="244.0" layoutY="44.0" text="Добавление новой записи" textAlignment="RIGHT" textFill="#7e0cff" wrapText="true" AnchorPane.bottomAnchor="320.4" AnchorPane.leftAnchor="229.0" AnchorPane.rightAnchor="229.0" AnchorPane.topAnchor="30.0">
+        <font>
+            <Font name="Ink Free" size="36.0" />
+        </font>
+    </Label>
+    <Button fx:id="ins" layoutX="286.0" layoutY="279.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#Save" prefHeight="30.0" prefWidth="110.0" style="-fx-background-color: #7e0cff; -fx-background-radius: 20; " text="Сохранить" textFill="WHITE" AnchorPane.bottomAnchor="65.0" AnchorPane.leftAnchor="260.0">
+        <font>
+            <Font name="System Bold" size="12.0" />
+        </font>
+        <effect>
+            <DropShadow height="50.0" radius="24.5" width="50.0">
+                <color>
+                    <Color red="0.3684210479259491" blue="0.7894737124443054" opacity="0.8199999928474426" />
+                </color>
+            </DropShadow>
+        </effect>
+    </Button>
+    <Button fx:id="back" layoutX="286.0" layoutY="330.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#Back" prefHeight="30.0" prefWidth="110.0" style="-fx-background-color: #7e0cff; -fx-background-radius: 20; " text="Назад" textFill="WHITE" AnchorPane.bottomAnchor="65.0" AnchorPane.rightAnchor="260.0">
+        <font>
+            <Font name="System Bold" size="12.0" />
+        </font>
+        <effect>
+            <DropShadow height="50.0" radius="24.5" width="50.0">
+                <color>
+                    <Color red="0.3684210479259491" blue="0.7894737124443054" opacity="0.8199999928474426" />
+                </color>
+            </DropShadow>
+        </effect>
+    </Button>
+    <ComboBox fx:id="animal" layoutX="245.0" layoutY="139.0" prefHeight="26.0" prefWidth="150.0" promptText="Пациент" AnchorPane.leftAnchor="245.0" AnchorPane.topAnchor="139.0" />
+    <DatePicker fx:id="data" layoutX="494.0" layoutY="139.0" prefHeight="26.0" prefWidth="150.0" promptText="Дата и время *" AnchorPane.leftAnchor="454.6" AnchorPane.rightAnchor="245.0" />
+    <ComboBox fx:id="veterinarian" layoutX="186.0" layoutY="209.0" prefHeight="26.0" prefWidth="150.0" promptText="Ветеринар" AnchorPane.leftAnchor="245.0" AnchorPane.topAnchor="187.0" />
+    <Spinner fx:id="spinHours" layoutX="494.0" layoutY="228.0" prefHeight="26.0" prefWidth="50.0" AnchorPane.rightAnchor="330.0" AnchorPane.topAnchor="187.0" />
+    <Spinner fx:id="spinMinutes" layoutX="499.0" layoutY="187.0" prefHeight="26.0" prefWidth="50.0" AnchorPane.rightAnchor="260.0" AnchorPane.topAnchor="187.0" />
+   <Label text=":" AnchorPane.leftAnchor="528.0" AnchorPane.topAnchor="180.0">
+      <font>
+         <Font size="24.0" />
+      </font>
+   </Label>
+</AnchorPane>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="rootWelcome" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.vetclinic.WelcomeController">
+    <Label layoutX="184.0" layoutY="58.0" text="Label" AnchorPane.bottomAnchor="280.0" AnchorPane.leftAnchor="265.0" AnchorPane.rightAnchor="265.0">
+        <font>
+            <Font name="Ink Free" size="40.0" />
+        </font>
+        <textFill>
+            <LinearGradient endX="1.0" startY="1.0">
+                <stops>
+                    <Stop>
+                        <color>
+                            <Color green="0.75789475440979" blue="0.75789475440979" />
+                        </color>
+                    </Stop>
+                    <Stop offset="1.0">
+                        <color>
+                            <Color red="0.9684210419654846" green="0.4842105209827423" blue="0.8392982482910156" />
+                        </color>
+                    </Stop>
+                </stops>
+            </LinearGradient>
+        </textFill>
+    </Label>
+    <Button layoutX="362.0" layoutY="218.0" mnemonicParsing="false" onAction="#switchToAdminScene" prefHeight="50.0" prefWidth="125.0" text="Button" textFill="BLACK" AnchorPane.leftAnchor="362.2" AnchorPane.rightAnchor="362.4">
+        <font>
+            <Font size="18.0" />
+        </font>
+    </Button>
+    <ImageView fx:id="image" fitHeight="86.0" fitWidth="70.0" layoutX="130.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="280.0">
+        <image>
+
+        </image>
+    </ImageView>
+
+
+</AnchorPane>

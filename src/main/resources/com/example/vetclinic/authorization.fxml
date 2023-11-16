@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="authoRoot" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.vetclinic.AuthorizationController">
+    <Label fx:id="autho" layoutX="340.0" layoutY="50.0" text="Авторизация" textFill="#7e0cff" AnchorPane.bottomAnchor="320.4" AnchorPane.leftAnchor="323.8" AnchorPane.rightAnchor="323.80000000000007" AnchorPane.topAnchor="30.0">
+        <font>
+            <Font name="Ink Free" size="36.0" />
+        </font>
+    </Label>
+    <Button fx:id="enter" layoutX="243.0" mnemonicParsing="false" onAction="#Login" prefHeight="30.0" prefWidth="80.0" style="-fx-background-color: #7e0cff; -fx-background-radius: 20; " text="Войти " textAlignment="CENTER" textFill="WHITE" AnchorPane.bottomAnchor="65.0" AnchorPane.leftAnchor="385.0" AnchorPane.rightAnchor="385.0">
+        <font>
+            <Font name="System Bold" size="12.0" />
+        </font>
+        <effect>
+            <DropShadow height="50.0" radius="24.5" width="50.0">
+                <color>
+                    <Color red="0.3684210479259491" blue="0.7894737124443054" opacity="0.8199999928474426" />
+                </color>
+            </DropShadow>
+        </effect>
+    </Button>
+    <PasswordField fx:id="enterpassword" layoutX="226.0" layoutY="174.0" promptText="Введите пароль" AnchorPane.bottomAnchor="219.4" AnchorPane.leftAnchor="350.2" AnchorPane.rightAnchor="350.20000000000005" AnchorPane.topAnchor="155.0" />
+</AnchorPane>

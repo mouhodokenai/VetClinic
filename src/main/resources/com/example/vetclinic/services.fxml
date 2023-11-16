@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="servicesRoot" prefHeight="400.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.vetclinic.ServicesController">
+    <Label fx:id="Title" layoutX="244.0" layoutY="44.0" text="Проведенные услуги" textAlignment="RIGHT" textFill="#7e0cff" wrapText="true" AnchorPane.bottomAnchor="330.4" AnchorPane.leftAnchor="270.2" AnchorPane.rightAnchor="270.19999999999993" AnchorPane.topAnchor="20.0">
+        <font>
+            <Font name="Ink Free" size="36.0" />
+        </font>
+    </Label>
+    <TableView fx:id="tableView" prefHeight="184.0" prefWidth="810.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="91.0">
+        <columns>
+            <TableColumn fx:id="checkColumn" prefWidth="43.6" />
+            <TableColumn fx:id="numberColumn" prefWidth="66.39999389648438" text="номер" />
+            <TableColumn fx:id="nameColumn" prefWidth="96.60000610351562" text="название" />
+            <TableColumn fx:id="dateColumn" prefWidth="123.60000610351562" text="дата" />
+            <TableColumn fx:id="coastColumn" prefWidth="72.39996337890625" text="цена" />
+            <TableColumn fx:id="animalColumn" prefWidth="76.0" text="пациент" />
+            <TableColumn fx:id="diagnosisColumn" prefWidth="143.60000610351562" text="диагноз" />
+            <TableColumn fx:id="vetColumn" prefWidth="192.79998779296875" text="врач" />
+        </columns>
+    </TableView>
+    <Button layoutX="260.0" layoutY="284.0" mnemonicParsing="false" onAction="#Add" prefHeight="30.0" prefWidth="110.0" style="-fx-background-color: #7e0cff; -fx-background-radius: 20; " text="Добавить" textFill="WHITE" AnchorPane.bottomAnchor="75.0" AnchorPane.leftAnchor="260.0">
+        <font>
+            <Font name="System Bold" size="12.0" />
+        </font>
+        <effect>
+            <DropShadow height="50.0" radius="24.5" width="50.0">
+                <color>
+                    <Color red="0.3684210479259491" blue="0.7894737124443054" opacity="0.8199999928474426" />
+                </color>
+            </DropShadow>
+        </effect>
+    </Button>
+    <Button layoutX="285.0" layoutY="337.0" mnemonicParsing="false" onAction="#Back" prefHeight="30.0" prefWidth="110.0" style="-fx-background-color: #7e0cff; -fx-background-radius: 20; " text="Назад" textFill="WHITE" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="260.0">
+        <font>
+            <Font name="System Bold" size="12.0" />
+        </font>
+        <effect>
+            <DropShadow height="50.0" radius="24.5" width="50.0">
+                <color>
+                    <Color red="0.3684210479259491" blue="0.7894737124443054" opacity="0.8199999928474426" />
+                </color>
+            </DropShadow>
+        </effect>
+    </Button>
+    <Button fx:id="delete" layoutX="435.0" layoutY="337.0" mnemonicParsing="false" onAction="#Delete" prefHeight="30.0" prefWidth="110.0" style="-fx-background-color: #7e0cff; -fx-background-radius: 20; " text="Удалить" textFill="WHITE" AnchorPane.bottomAnchor="25.0" AnchorPane.rightAnchor="260.0">
+        <font>
+            <Font name="System Bold" size="12.0" />
+        </font>
+        <effect>
+            <DropShadow height="50.0" radius="24.5" width="50.0">
+                <color>
+                    <Color red="0.3684210479259491" blue="0.7894737124443054" opacity="0.8199999928474426" />
+                </color>
+            </DropShadow>
+        </effect>
+    </Button>
+    <Button fx:id="edit" layoutX="435.0" layoutY="69.0" mnemonicParsing="false" onAction="#Edit" prefHeight="30.0" prefWidth="110.0" style="-fx-background-color: #7e0cff; -fx-background-radius: 20; " text="Редактировать" textFill="WHITE" AnchorPane.bottomAnchor="75.0" AnchorPane.rightAnchor="260.0">
+        <font>
+            <Font name="System Bold" size="12.0" />
+        </font>
+        <effect>
+            <DropShadow height="50.0" radius="24.5" width="50.0">
+                <color>
+                    <Color red="0.3684210479259491" blue="0.7894737124443054" opacity="0.8199999928474426" />
+                </color>
+            </DropShadow>
+        </effect>
+    </Button>
+</AnchorPane>

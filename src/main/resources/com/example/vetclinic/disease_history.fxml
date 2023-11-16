@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="historyPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.vetclinic.DiseaseHistoryController">
+   <Label fx:id="name" layoutX="32.0" layoutY="23.0" text="История пациента" textFill="#7e0cff" AnchorPane.leftAnchor="200.0" AnchorPane.topAnchor="20.0">
+      <font>
+         <Font name="Ink Free" size="36.0" />
+      </font>
+   </Label>
+   <Label fx:id="owner" layoutX="102.0" layoutY="79.0" text="Владелец:" AnchorPane.bottomAnchor="290.0" AnchorPane.leftAnchor="102.0">
+      <font>
+         <Font name="System Bold" size="12.0" />
+      </font></Label>
+   <Label fx:id="type" layoutX="330.0" layoutY="79.0" prefHeight="17.0" prefWidth="219.0" text="Вид питомца:" AnchorPane.bottomAnchor="290.0" AnchorPane.leftAnchor="500.0">
+       <font>
+           <Font name="System Bold" size="12.0" />
+       </font></Label>
+    <Button layoutX="285.0" layoutY="337.0" mnemonicParsing="false" onAction="#Back" prefHeight="30.0" prefWidth="110.0" style="-fx-background-color: #7e0cff; -fx-background-radius: 20; " text="Назад" textFill="WHITE" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="369.8" AnchorPane.rightAnchor="369.79999999999995">
+        <font>
+            <Font name="System Bold" size="12.0" />
+        </font>
+        <effect>
+            <DropShadow height="50.0" radius="24.5" width="50.0">
+                <color>
+                    <Color red="0.3684210479259491" blue="0.7894737124443054" opacity="0.8199999928474426" />
+                </color>
+            </DropShadow>
+        </effect>
+    </Button>
+   <TableView fx:id="tableView" layoutX="20.0" layoutY="110.0" prefHeight="184.0" prefWidth="810.0" AnchorPane.bottomAnchor="90.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0">
+     <columns>
+         <TableColumn fx:id="numberColumn" prefWidth="74.2" text="номер" />
+         <TableColumn fx:id="dateColumn" prefWidth="137.80001831054688" text="дата" />
+         <TableColumn fx:id="serviceColumn" prefWidth="174.40000915527344" text="услуга" />
+         <TableColumn fx:id="diagnosisColumn" prefWidth="163.0" text="диагноз" />
+         <TableColumn fx:id="veterinarianColumn" prefWidth="282.60003662109375" text="врач" />
+     </columns>
+   </TableView>
+</AnchorPane>

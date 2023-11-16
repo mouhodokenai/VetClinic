@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="InsVetRoot" prefHeight="400.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.vetclinic.VeterinariansInserterController">
+    <Label fx:id="Title" layoutX="244.0" layoutY="44.0" text="Добавление нового врача" textAlignment="RIGHT" textFill="#7e0cff" wrapText="true" AnchorPane.bottomAnchor="320.4" AnchorPane.leftAnchor="226.6" AnchorPane.rightAnchor="226.59999999999997" AnchorPane.topAnchor="30.0">
+        <font>
+            <Font name="Ink Free" size="36.0" />
+        </font>
+    </Label>
+    <TextField fx:id="name" layoutX="405.0" layoutY="133.0" promptText="ФИО *" AnchorPane.leftAnchor="245.0" AnchorPane.topAnchor="139.0" />
+    <TextField fx:id="document" layoutX="404.0" layoutY="172.0" prefHeight="26.0" prefWidth="150.0" promptText="Серия, номер паспорта *" AnchorPane.leftAnchor="245.0" AnchorPane.topAnchor="187.0" />
+    <ComboBox fx:id="specialization" editable="true" layoutX="569.0" layoutY="138.0" prefHeight="26.0" prefWidth="150.0" promptText="Спецализация *" AnchorPane.rightAnchor="245.0" AnchorPane.topAnchor="138.0" />
+    <TextField fx:id="contact" layoutX="550.0" layoutY="187.0" prefHeight="26.0" prefWidth="150.0" promptText="Контакт *" AnchorPane.rightAnchor="245.0" AnchorPane.topAnchor="187.0" />
+    <Button fx:id="ins" layoutX="286.0" layoutY="279.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#Save" prefHeight="30.0" prefWidth="110.0" style="-fx-background-color: #7e0cff; -fx-background-radius: 20; " text="Cохранить" textFill="WHITE" AnchorPane.bottomAnchor="65.0" AnchorPane.leftAnchor="260.0">
+        <font>
+            <Font name="System Bold" size="12.0" />
+        </font>
+        <effect>
+            <DropShadow height="50.0" radius="24.5" width="50.0">
+                <color>
+                    <Color red="0.3684210479259491" blue="0.7894737124443054" opacity="0.8199999928474426" />
+                </color>
+            </DropShadow>
+        </effect>
+    </Button>
+    <Button fx:id="back" layoutX="286.0" layoutY="330.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#Back" prefHeight="30.0" prefWidth="110.0" style="-fx-background-color: #7e0cff; -fx-background-radius: 20; " text="Назад" textFill="WHITE" AnchorPane.bottomAnchor="65.0" AnchorPane.rightAnchor="260.0">
+        <font>
+            <Font name="System Bold" size="12.0" />
+        </font>
+        <effect>
+            <DropShadow height="50.0" radius="24.5" width="50.0">
+                <color>
+                    <Color red="0.3684210479259491" blue="0.7894737124443054" opacity="0.8199999928474426" />
+                </color>
+            </DropShadow>
+        </effect>
+    </Button>
+</AnchorPane>
